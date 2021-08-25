@@ -10,6 +10,7 @@ const ComponentsW=styled.div`
         position: fixed !important;
         top: 0;
         right:0;
+        z-index:100;
        
         ul{
             display: flex;
@@ -37,7 +38,20 @@ const ComponentsW=styled.div`
 
     /* footer */
     .footer{
-        background-color: blue;
+        box-sizing: border-box;
+        background-image: radial-gradient(circle, #252525, #1d1d1d, #161616, #0d0d0d, #000000);
+        padding: 10px 30px;
+        color: #F4B400;
+        a{
+            color: #F4B400;
+            text-decoration:none;
+            margin-right: 10px;
+            padding: 5px;
+            &:hover{
+                text-decoration:none;
+                transform: translateY(10px);
+            }
+        }
     }
 
 `;
