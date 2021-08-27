@@ -20,7 +20,8 @@ const HomeW=styled.div`
     .section11{
         box-sizing: border-box;
         min-height: 90vh;
-        background-color:white;
+        background-image: url("bg2.jpg");
+        background-size: cover;
         padding: 120px 0;
         color: green;
         .bbqPicture{

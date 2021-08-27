@@ -14,7 +14,17 @@ const initialState={
         {name:"Şalgam Suyu (Pickled Turnip Juice)",inf:"Pickled turnip juice or just known as turnips when ordering comes from the mustard family. This interestingly tangy beverage is very popular in the Cukurova (South Central) region of Türkiye. Places like Mersin, Adana, and Hatay are among the origins. These beets are mixed with water and salt to create a simple pickle. The redness comes from using black carrots. A popular drink to accompany heavy meat dishes.",img:"https://cdn.goadventureturkey.com/goturkey/6-must-try-traditional-turkish-drinks-6.jpg"}
     ],
     dayNight:true,
-    like:false
+    like:false, 
+    like2:false,
+     like3:false, 
+     like4:false, 
+     like5:false,
+     like1:false, 
+     like22:false,
+      like33:false, 
+      like44:false, 
+      like55:false,
 };
+
 
 export default initialState

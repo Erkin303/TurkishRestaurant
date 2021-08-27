@@ -14,8 +14,36 @@ import { FaRegHandPointRight } from "react-icons/fa";
 
 
 const Meal = () => {
+const dispatch = useDispatch();
+
     const dayNight = useSelector(state => state.dayNight);
     const like = useSelector(state => state.like);
+    const like2 = useSelector(state => state.like2);
+    const like3 = useSelector(state => state.like3);
+    const like4 = useSelector(state => state.like4);
+    const like5 = useSelector(state => state.like5);
+
+    const Ozgartirish2 =(e)=>{
+        const action={type:"LIKE", payload:!like};
+        return dispatch(action);
+    }
+
+    const Ozgartirish3 =(e)=>{
+        const action={type:"LIKE2", payload:!like2};
+        return dispatch(action);
+    }
+    const Ozgartirish4 =(e)=>{
+        const action={type:"LIKE3", payload:!like3};
+        return dispatch(action);
+    }
+    const Ozgartirish5 =(e)=>{
+        const action={type:"LIKE4", payload:!like4};
+        return dispatch(action);
+    }
+     const Ozgartirish6 =(e)=>{
+        const action={type:"LIKE5", payload:!like5};
+        return dispatch(action);
+    }
 
 
     return (
@@ -32,10 +60,16 @@ const Meal = () => {
                                 <p className='FamilyBig'><span className='fs-3 m-0 pe-1'><AiFillHeart/></span> Turkish foods </p>
                                 <p className='FamilySm'><FaRegHandPointRight/> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores vero tenetur repudiandae, dolore iure, suscipit sapiente libero 
                                     voluptate soluta laboriosam sed! Sunt a corporis autem dolorum ut totam cum quod.</p>
+
                                 <p className='stars'><AiFillStar/> <AiFillStar/> <AiFillStar/> <AiFillStar/> <BsStarHalf/></p>
-                                <p className='text-center text-danger'><span className={like && "d-block" || "d-none"}><AiFillHeart/></span> 
-                                <span className={like && "d-none" || "d-block"}><AiOutlineHeart/></span> 
-                                </p>
+                                
+                              <div className="text-center  pt-2 pb-2">
+                              <button onClick={()=>Ozgartirish2()} className='btn btn-light m-0'>
+                                <span className={like && "d-block text-danger fs-4" || "d-none"}><AiFillHeart/></span>
+                                <span className={like && "d-none" || "d-block  text-danger fs-4"}><AiOutlineHeart/></span> 
+                                </button>
+                              </div>
+                              
 
                                 <div className='d-flex justify-content-between '>
                                     <button className='btn btn-success'>Ordering</button>
@@ -61,8 +95,12 @@ const Meal = () => {
                                 <p className='FamilySm'><FaRegHandPointRight/> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores vero tenetur repudiandae, dolore iure, suscipit sapiente libero 
                                     voluptate soluta laboriosam sed! Sunt a corporis autem dolorum ut totam cum quod.</p>
                                 <p className='stars'><AiFillStar/> <AiFillStar/> <AiFillStar/> <AiFillStar/> <BsStarHalf/></p>
-                                <p className='text-center text-danger'><AiFillHeart/> <AiOutlineHeart/></p>
-
+                                <div className="text-center  pt-2 pb-2">
+                              <button onClick={()=>Ozgartirish3()} className='btn btn-light m-0'>
+                                <span className={like2 && "d-block text-danger fs-4" || "d-none"}><AiFillHeart/></span>
+                                <span className={like2 && "d-none" || "d-block  text-danger fs-4"}><AiOutlineHeart/></span> 
+                                </button>
+                              </div>
                                 <div className='d-flex justify-content-between '>
                                     <button className='btn btn-success'>Ordering</button>
                                     <button className='btn btnColor'>Inform</button>
@@ -76,6 +114,12 @@ const Meal = () => {
                                             <p className='FamilySm'><FaRegHandPointRight/> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores vero tenetur repudiandae, dolore iure, suscipit sapiente libero 
                                                 voluptate soluta laboriosam sed! Sunt a corporis autem dolorum ut totam cum quod.</p>
                                             <p className='stars'><AiFillStar/> <AiFillStar/> <AiFillStar/> <AiFillStar/> <BsStarHalf/></p>
+                                            <div className="text-center  pt-2 pb-2">
+                                            <button onClick={()=>Ozgartirish4()} className='btn btn-light m-0'>
+                                                <span className={like3 && "d-block text-danger fs-4" || "d-none"}><AiFillHeart/></span>
+                                                <span className={like3 && "d-none" || "d-block  text-danger fs-4"}><AiOutlineHeart/></span> 
+                                                </button>
+                                            </div>
                                             <div className='d-flex justify-content-between '>
                                                 <button className='btn btn-success'>Ordering</button>
                                                 <button className='btn btnColor'>Inform</button>
@@ -99,7 +143,12 @@ const Meal = () => {
                                 <p className='FamilySm'><FaRegHandPointRight/> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores vero tenetur repudiandae, dolore iure, suscipit sapiente libero 
                                     voluptate soluta laboriosam sed! Sunt a corporis autem dolorum ut totam cum quod.</p>
                                 <p className='stars'><AiFillStar/> <AiFillStar/> <AiFillStar/> <AiFillStar/> <BsStarHalf/></p>
-                                <p className='text-center text-danger'>heart</p>
+                                <div className="text-center  pt-2 pb-2">
+                              <button onClick={()=>Ozgartirish5()} className='btn btn-light m-0'>
+                                <span className={like4 && "d-block text-danger fs-4" || "d-none"}><AiFillHeart/></span>
+                                <span className={like4 && "d-none" || "d-block  text-danger fs-4"}><AiOutlineHeart/></span> 
+                                </button>
+                              </div>
                                 <div className='d-flex justify-content-between '>
                                     <button className='btn btn-success'>Ordering</button>
                                     <button className='btn btnColor'>Inform</button>
@@ -113,7 +162,12 @@ const Meal = () => {
                                 <p className='FamilySm'><FaRegHandPointRight/> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores vero tenetur repudiandae, dolore iure, suscipit sapiente libero 
                                     voluptate soluta laboriosam sed! Sunt a corporis autem dolorum ut totam cum quod.</p>
                                 <p className='stars'><AiFillStar/> <AiFillStar/> <AiFillStar/> <AiFillStar/> <BsStarHalf/></p>
-                                <p className='text-center text-danger'>heart</p>
+                                <div className="text-center  pt-2 pb-2">
+                              <button onClick={()=>Ozgartirish6()} className='btn btn-light m-0'>
+                                <span className={like5 && "d-block text-danger fs-4" || "d-none"}><AiFillHeart/></span>
+                                <span className={like5 && "d-none" || "d-block  text-danger fs-4"}><AiOutlineHeart/></span> 
+                                </button>
+                              </div>
                                 <div className='d-flex justify-content-between '>
                                     <button className='btn btn-success'>Ordering</button>
                                     <button className='btn btnColor'>Inform</button>

@@ -40,7 +40,7 @@ const ComponentsW=styled.div`
         width: 100%;
         display: flex;
         justify-content: space-between;
-        background-color: rgb(2, 75, 2);
+        background-image: radial-gradient(circle, #52834f, #41733e, #2f642e, #1d551e, #05460d);
         position: fixed !important;
         top: 0;
         right:0;
@@ -112,7 +112,7 @@ const ComponentsW=styled.div`
     }
     .footer2{
         box-sizing: border-box;
-        background-color: rgb(2, 75, 2);
+        background-image: radial-gradient(circle, #52834f, #41733e, #2f642e, #1d551e, #05460d);
         padding: 10px 30px;
         color: white;
         a{

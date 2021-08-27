@@ -12,9 +12,11 @@ import './header'
 import Link from 'next/link';
 import { HomeW } from '../styleW/HomeW';
 
+
 const styles = {
   list: {
     width: 250,
+    color: "black"
   },
   fullList: {
     width: 'auto',
