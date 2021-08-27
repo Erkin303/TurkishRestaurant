@@ -12,7 +12,8 @@ const initialState={
         {name:"Boza",inf:"Turkish Boza is a smoothie-like fermented drink that is mainly based on cracked wheat and yeast. It has a sweet and tangy flavour that everyone finds addictive! When we think of Turkish winters, often the thought of boza pops into our heads. This drink originated from ancient Anatolia, made up then of wheat, corn, rice and barley. Known for its magnificent health properties, reducing blood pressure and high in potassium, this warm drink is usually served with roasted chickpeas.",img:"https://cdn.goadventureturkey.com/goturkey/6-must-try-traditional-turkish-drinks-5.jpg"},
 
         {name:"Şalgam Suyu (Pickled Turnip Juice)",inf:"Pickled turnip juice or just known as turnips when ordering comes from the mustard family. This interestingly tangy beverage is very popular in the Cukurova (South Central) region of Türkiye. Places like Mersin, Adana, and Hatay are among the origins. These beets are mixed with water and salt to create a simple pickle. The redness comes from using black carrots. A popular drink to accompany heavy meat dishes.",img:"https://cdn.goadventureturkey.com/goturkey/6-must-try-traditional-turkish-drinks-6.jpg"}
-    ]
+    ],
+    dayNight:true,
 };
 
 export default initialState

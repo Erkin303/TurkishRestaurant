@@ -4,14 +4,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css"
 import "swiper/components/navigation/navigation.min.css"
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import Link from 'next/link'
 
 import { BsPeopleFill ,BsStarHalf} from "react-icons/bs";
 import { AiFillStar ,AiFillHeart} from "react-icons/ai";
 import { FaRegHandPointRight } from "react-icons/fa";
-
-
 
 
 
@@ -29,12 +27,16 @@ const Home = () => {
 
     const meal = useSelector(state => state.meal);
     const drink = useSelector(state => state.drink);
+    const dayNight = useSelector(state => state.dayNight);
+
     const [numberM, setnumberM] = useState(0);
     const [numberD, setnumberD]= useState(0);
-    console.log(numberM);
+
+   
+    console.log(dayNight);
     return (
         <HomeW>
-            <section className='section1'>
+            <section className={dayNight && "section1" || "section11"}>
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6 col-sm-12">
@@ -52,8 +54,9 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-
-            <section className='section2'>
+            
+            {/* section2 meal swiper */}
+            <section  className={dayNight && "section2" || "section22"} >
                 <h1 className='text-center'>Meal of Turkey</h1>
                 <h5 className='text-center'>Turkish cuisine is one of the most varied and richest in the world.</h5>
                 <div className="container">
@@ -88,7 +91,7 @@ const Home = () => {
             </section>
 
             {/* section3 */}
-            <section className='section3'>
+            <section  className={dayNight && "section3" || "section33"} >
                 <div className="container">
                    <div className='text-center'>
                    <h1>For Family</h1>
@@ -159,13 +162,14 @@ const Home = () => {
                                     <img src="https://media-cdn.tripadvisor.com/media/photo-s/12/e4/ee/77/blue-mosque-view-from.jpg" alt="picture" className='familyP2' />
                                 </div>
                             </div>
-                        </div>
+                        </div>  
+                       
                     </div>
                 </div>
             </section>
 
             {/* section4 drinks */}
-            <section className='section2'>
+            <section  className={dayNight && "section2" || "section22"} >
                 <h1 className='text-center'>Drinks of Turkey</h1>
                 <h5 className='text-center'>Turkish cuisine is one of the most varied and richest in the world.</h5>
                 <div className="container">
@@ -200,7 +204,7 @@ const Home = () => {
             </section>
 
             {/* secrtion5 yosh oila qurganlar uchun */}
-            <section className='section3'>
+            <section  className={dayNight && "section3" || "section33"}>
                 <div className="container">
                    <div className='text-center'>
                    <h1>For new Married</h1>
@@ -209,7 +213,7 @@ const Home = () => {
                     <div className="row">
                         <div className="col-lg-6 col-sm-12">
                             <div className='familyInf2'>
-                                <p className='FamilyBig'><span className='fs-3 m-0 pe-1'><AiFillHeart/></span> Family's Celebrating </p>
+                                <p className='FamilyBig'><span className='fs-3 m-0 pe-1'><AiFillHeart/></span>Marry Me ? </p>
                                 <p className='FamilySm'><FaRegHandPointRight/> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores vero tenetur repudiandae, dolore iure, suscipit sapiente libero 
                                     voluptate soluta laboriosam sed! Sunt a corporis autem dolorum ut totam cum quod.</p>
                                 <p className='stars'><AiFillStar/> <AiFillStar/> <AiFillStar/> <AiFillStar/> <BsStarHalf/></p>
@@ -233,7 +237,7 @@ const Home = () => {
                         </div>
                         <div className="col-lg-6 col-sm-12">
                             <div className='familyInf2'>
-                                <p className='FamilyBig'><span className='fs-3 m-0 pe-1'><AiFillHeart/></span> Family's Celebrating </p>
+                                <p className='FamilyBig'><span className='fs-3 m-0 pe-1'><AiFillHeart/></span>Marry Me ?</p>
                                 <p className='FamilySm'><FaRegHandPointRight/> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores vero tenetur repudiandae, dolore iure, suscipit sapiente libero 
                                     voluptate soluta laboriosam sed! Sunt a corporis autem dolorum ut totam cum quod.</p>
                                 <p className='stars'><AiFillStar/> <AiFillStar/> <AiFillStar/> <AiFillStar/> <BsStarHalf/></p>
@@ -246,7 +250,7 @@ const Home = () => {
              
                                 <div className="col-lg-3 col-sm-12">
                                     <div className='familyInf2'>
-                                            <p className='FamilyBig'><span className='fs-3 m-0 pe-1'><BsPeopleFill/></span> Family's Celebrating </p>
+                                            <p className='FamilyBig'><span className='fs-3 m-0 pe-1'><AiFillHeart/></span> Marry Me ?  </p>
                                             <p className='FamilySm'><FaRegHandPointRight/> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores vero tenetur repudiandae, dolore iure, suscipit sapiente libero 
                                                 voluptate soluta laboriosam sed! Sunt a corporis autem dolorum ut totam cum quod.</p>
                                             <p className='stars'><AiFillStar/> <AiFillStar/> <AiFillStar/> <AiFillStar/> <BsStarHalf/></p>
@@ -264,7 +268,7 @@ const Home = () => {
                                     </div>
                                     <div className="col-lg-3  col-sm-12">
                                         <div className='familyInf2'>
-                                            <p className='FamilyBig'><span className='fs-3 m-0 pe-1'><BsPeopleFill/></span> Family's Celebrating </p>
+                                            <p className='FamilyBig'><span className='fs-3 m-0 pe-1'><AiFillHeart/></span> Marry Me ? </p>
                                             <p className='FamilySm'><FaRegHandPointRight/> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores vero tenetur repudiandae, dolore iure, suscipit sapiente libero 
                                                 voluptate soluta laboriosam sed! Sunt a corporis autem dolorum ut totam cum quod.</p>
                                             <p className='stars'><AiFillStar/> <AiFillStar/> <AiFillStar/> <AiFillStar/> <BsStarHalf/></p>
@@ -281,6 +285,56 @@ const Home = () => {
                 </div>
             </section>
             
+            {/* section6 forms */}
+            <section   className={dayNight && "section6" || "section66"}>
+                <div className="container">
+                    <div className='text-center pt-2 pb-3 mb-2'>
+                    <h1>Ordering to Restaurant</h1>
+                    <h5>We will be happy if You come !</h5>
+                    </div>
+                    <div className="row">
+                    <div className="col-md-6 col-sm-12">
+                    <div className='p-2'>
+                        <label htmlFor="name" className='form-label'>Your Name</label>
+                        <input type="text" className='w-100 form-control mb-4' placeholder='Charlie' id='name'/>
+
+                        <label htmlFor="sureName" className='form-label'>Your Surname</label>
+                        <input type="text" className='w-100 form-control  mb-4' placeholder='Puth' id='sureName'/>
+
+                        <div className='mb-3'>
+                        </div>
+                        
+                        <label htmlFor="passport" className='form-label'>Passport ID</label>
+                        <input type="text" className='w-100 form-control  mb-4' placeholder='LL2361020' id='passport'/>
+
+                        <label htmlFor="numbers" className='form-label'>Phone Number</label>
+                        <input type="text" className='w-100 form-control' placeholder='+8898-(33)-236-56-89' id='numbers'/>
+                        
+                    </div>
+                </div>
+                <div className="col-md-6 col-sm-12">
+                    <div className='p-2'>
+                        <label htmlFor="country" className='form-label'>Your Country</label>
+                        <input type="text" className='w-100 form-control  mb-4' placeholder='USA' id='country'/>
+
+                        <label htmlFor="job" className='form-label'>Your Job</label>
+                        <input type="text" className='w-100 form-control  mb-4' placeholder='Businessman' id='job'/>
+
+                        <label htmlFor="country" className='form-label'>Old Card number</label>
+                        <input type="number" className='w-100 form-control  mb-4' placeholder='4500 6321 4589 3265' id='country'/>
+                        <div>
+                        </div>
+
+                        <div className='d-flex justify-content-end'>
+                        <button className='btn btnColor orderingBtn'>Order</button>
+                        </div>
+
+
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </section>
             
         </HomeW>
     )

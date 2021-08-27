@@ -5,11 +5,12 @@ import { Provider } from 'react-redux'
 import store from '../redux/state'
 
 function MyApp({ Component, pageProps }) {
-  return <All>
-   <Provider store={store}>
+  return <Provider store={store}>
+     <All>
       <Component {...pageProps} />
+      </All>
    </Provider>
-  </All>
+  
 }
 
 export default MyApp

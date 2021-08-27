@@ -3,6 +3,7 @@ import { ComponentsW } from '../styleW/componentW'
 import { AiOutlineInstagram } from "react-icons/ai";
 import { FiFacebook ,FiTwitter} from "react-icons/fi";
 import { FaTelegramPlane } from "react-icons/fa";
+import {  useSelector } from 'react-redux'
 
 
 
@@ -10,9 +11,11 @@ import { FaTelegramPlane } from "react-icons/fa";
 
 
 const Footer = () => {
+    const dayNight = useSelector(state => state.dayNight);
+
     return (
         <ComponentsW>
-            <div className="footer">
+            <div className={dayNight && "footer" || "footer2"}>
                 <div className="row">
                     <div className="col-lg-4 col-md-6 col-sm-12">
                         <div>
@@ -33,8 +36,8 @@ const Footer = () => {
                     <div className="col-lg-4 col-md-6 col-sm-12">
                         <div>
                             <label htmlFor="email">Email</label>
-                            <input className='form-control w-50' type="email" value='@gmail.com' id="email"/>
-                            <a href="#"><span className='fs-3'><AiOutlineInstagram/></span></a>
+                            <input className='form-control w-50' type="email" id="email"/>
+                            <a href="#"><span className='fs-3 icons'><AiOutlineInstagram/></span></a>
                             <a href="#"><span className='fs-3'><FiFacebook/></span></a>
                             <a href="#"><span className='fs-3'><FaTelegramPlane/></span></a>
                             <a href="#"><span className='fs-3'><FiTwitter/></span></a>
