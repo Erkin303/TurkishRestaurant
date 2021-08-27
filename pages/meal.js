@@ -8,13 +8,15 @@ import { useDispatch } from 'react-redux';
 import Link from 'next/link'
 
 import { BsPeopleFill ,BsStarHalf} from "react-icons/bs";
-import { AiFillStar ,AiFillHeart} from "react-icons/ai";
+import { AiFillStar ,AiFillHeart,AiOutlineHeart} from "react-icons/ai";
 import { FaRegHandPointRight } from "react-icons/fa";
 
 
 
 const Meal = () => {
     const dayNight = useSelector(state => state.dayNight);
+    const like = useSelector(state => state.like);
+
 
     return (
         <HomeW>
@@ -31,7 +33,10 @@ const Meal = () => {
                                 <p className='FamilySm'><FaRegHandPointRight/> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores vero tenetur repudiandae, dolore iure, suscipit sapiente libero 
                                     voluptate soluta laboriosam sed! Sunt a corporis autem dolorum ut totam cum quod.</p>
                                 <p className='stars'><AiFillStar/> <AiFillStar/> <AiFillStar/> <AiFillStar/> <BsStarHalf/></p>
-                                <p className='text-center text-danger'>heart</p>
+                                <p className='text-center text-danger'><span className={like && "d-block" || "d-none"}><AiFillHeart/></span> 
+                                <span className={like && "d-none" || "d-block"}><AiOutlineHeart/></span> 
+                                </p>
+
                                 <div className='d-flex justify-content-between '>
                                     <button className='btn btn-success'>Ordering</button>
                                     <button className='btn btnColor'>Inform</button>
@@ -56,7 +61,7 @@ const Meal = () => {
                                 <p className='FamilySm'><FaRegHandPointRight/> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores vero tenetur repudiandae, dolore iure, suscipit sapiente libero 
                                     voluptate soluta laboriosam sed! Sunt a corporis autem dolorum ut totam cum quod.</p>
                                 <p className='stars'><AiFillStar/> <AiFillStar/> <AiFillStar/> <AiFillStar/> <BsStarHalf/></p>
-                                <p className='text-center text-danger'>heart</p>
+                                <p className='text-center text-danger'><AiFillHeart/> <AiOutlineHeart/></p>
 
                                 <div className='d-flex justify-content-between '>
                                     <button className='btn btn-success'>Ordering</button>

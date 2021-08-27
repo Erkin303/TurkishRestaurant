@@ -65,7 +65,7 @@ const Home = () => {
                             <div>
                             <Swiper navigation={true} className="swiperMeal" onSlideChange={(e)=>setnumberM(e.activeIndex)}>
                             {meal.map((v,i)=>{
-                                return <SwiperSlide><div className='mealSwiperImgCard'>
+                                return <SwiperSlide key={i}><div className='mealSwiperImgCard'>
                                     <img src={v.img} alt=""  className='swiperImgMeal'/></div>
                                 </SwiperSlide>
                             })}      
@@ -192,7 +192,7 @@ const Home = () => {
                         <div>
                             <Swiper navigation={true} className="swiperMeal" onSlideChange={(e)=>setnumberD(e.activeIndex)}>
                             {drink.map((v,i)=>{
-                                return <SwiperSlide><div className='mealSwiperImgCard'>
+                                return <SwiperSlide key={i}><div className='mealSwiperImgCard'>
                                     <img src={v.img} alt=""  className='swiperImgMeal'/></div>
                                 </SwiperSlide>
                             })}      
