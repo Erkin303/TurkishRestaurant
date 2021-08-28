@@ -23,6 +23,22 @@ const styles = {
   },
 };
 
+const StyledLink= withStyles({
+  root: {
+    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+    borderRadius: 3,
+    border: 0,
+    color: 'green',
+    height: 48,
+    padding: '0 10px',
+    width:'150px',
+    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+  },
+  label: {
+    textTransform: 'capitalize',
+  },
+})(Link);
+
 
 class TemporaryDrawer extends React.Component {
   state = {
@@ -41,40 +57,14 @@ class TemporaryDrawer extends React.Component {
     const sideList = (
       <div className={classes.list}>
         <List>
-          {[<Link href="/">Home</Link>, <Link href="/meal">Meal</Link>, <Link href="/drink">Drink</Link>, 'Desert'].map((text, index) => (
+          {[<StyledLink href="/" >Home </StyledLink>, <Link href="/meal">Meal </Link>, <Link href="/drink">Drink</Link>, <Link href="/desert">Desert</Link>].map((text, index) => (
             <ListItem button key={text}>
-              <ListItemText primary={text} />
+            <ListItemText primary={text} />
+             
             </ListItem>
           ))}
         </List>
         <Divider />
-        <List>
-          {['Family', 'Young Family', 'Pictures'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-        </List>
-      </div>
-    );
-
-    const fullList = (
-      <div className={classes.fullList}>
-        <List>
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-        </List>
-        <Divider />
-        <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-        </List>
       </div>
     );
 

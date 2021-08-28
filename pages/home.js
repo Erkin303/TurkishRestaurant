@@ -36,7 +36,7 @@ const Home = () => {
     console.log(dayNight);
     return (
         <HomeW>
-            <section className={dayNight && "section1" || "section11"}>
+            <section className={`section1and11 ${dayNight && "section1" || "section11"}`}>
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6 col-sm-12">
@@ -45,11 +45,18 @@ const Home = () => {
                                 <p className='inhWords2'>With a few summertime exceptions, most of Turkey’s innovative restaurants are located in its largest and most cosmopolitan city: Istanbul. From Michelin star-worthy tasting
                                      menus to Turkish classics with a modern twist, these are the best restaurants in Turkey.</p>
                             </div>
+                              <div className="bbqP">
+                                <img src="https://media.istockphoto.com/photos/sirloin-steaks-with-fresh-thyme-picture-id972852490?k=20&m=972852490&s=612x612&w=0&h=Xef4wYtVIAQuKd1H5CR69Bb6YXTV4U7UEEtZAkp2z9Q=" alt="" className='bbqp' />
+                            </div>
+                            <div className="bbqP2">
+                                <img src="https://static.toiimg.com/photo/76942221.cms" alt="" className='bbqp' />
+                            </div>
                         </div>
                         <div className="col-md-6 col-sm-12">
                             <div  className=' d-flex justify-content-center'>
                                 <img src="./bbq.jpg" alt="picture"  className='bbqPicture'/>
                             </div>
+                          
                         </div>
                     </div>
                 </div>
@@ -111,7 +118,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12">
-                            <div className='familyPictures'>
+                            <div className='familyPictures1'>
                                 <img src="https://www.restobiz.ca/wp-content/uploads/2020/06/Toronto-family-meal-deals.jpg" alt="picture" className='familyP111' />
                             </div>
                         </div>
@@ -132,7 +139,7 @@ const Home = () => {
                             <div>
                                 <div className="row">
                                     <div className="col-lg-6 col-sm-12">
-                                    <div className='familyPictures'>
+                                    <div className='familyPictures1'>
                                     <img src="https://media.istockphoto.com/photos/dinner-with-friends-group-of-young-people-enjoying-dinner-together-picture-id1173786659?k=6&m=1173786659&s=612x612&w=0&h=jXE8PbjC0Y69V5Zcr2N1o2mzdj_i7E7EIYMEVhlB6cA=" alt="picture" className='familyP111' />
                                     </div>
                                     </div>

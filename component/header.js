@@ -5,10 +5,6 @@ import Drawes from './drawes';
 import { BsFillBrightnessHighFill,BsMoon} from "react-icons/bs";
 
 
-
-
-
-
 const Header = () => {
     const dayNight = useSelector(state => state.dayNight);
     const dispatch = useDispatch();
@@ -22,7 +18,7 @@ const Header = () => {
         <ComponentsW>
           
            
-           <div className={dayNight && "header" || "header2"}>
+           <div className={`obshiyclass ${dayNight && "header" || "header2"}`}>
                 <div>
                     <img src="tr.jpeg" alt="" />
                 </div>

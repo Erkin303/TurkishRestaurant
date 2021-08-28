@@ -10,6 +10,7 @@ import Link from 'next/link'
 import { BsPeopleFill ,BsStarHalf} from "react-icons/bs";
 import { AiFillStar ,AiFillHeart,AiOutlineHeart} from "react-icons/ai";
 import { FaRegHandPointRight } from "react-icons/fa";
+import Modal from './../component/modal'
 
 
 const Drink = () => {
@@ -67,7 +68,7 @@ const Drink = () => {
                                 </button>
                               </div>
                              <div className='d-flex justify-content-between '>
-                                 <button className='btn btn-success'>Ordering</button>
+                                 <button className='btn btn-success p-0'><Modal></Modal></button>
                                  <button className='btn btnColor'>Inform</button>
                              </div>
                          </div>
@@ -98,7 +99,7 @@ const Drink = () => {
                               </div>
 
                              <div className='d-flex justify-content-between '>
-                                 <button className='btn btn-success'>Ordering</button>
+                             <button className='btn btn-success p-0'><Modal></Modal></button>
                                  <button className='btn btnColor'>Inform</button>
                              </div>
                          </div>
@@ -117,7 +118,7 @@ const Drink = () => {
                                             </button>
                                         </div>
                                          <div className='d-flex justify-content-between '>
-                                             <button className='btn btn-success'>Ordering</button>
+                                         <button className='btn btn-success p-0'><Modal></Modal></button>
                                              <button className='btn btnColor'>Inform</button>
                                          </div>
                                  </div>
@@ -145,9 +146,8 @@ const Drink = () => {
                                 <span className={like44 && "d-none" || "d-block  text-danger fs-4"}><AiOutlineHeart/></span> 
                                 </button>
                               </div>
-                             <p className='text-center text-danger'>heart</p>
                              <div className='d-flex justify-content-between '>
-                                 <button className='btn btn-success'>Ordering</button>
+                             <button className='btn btn-success p-0'><Modal></Modal></button>
                                  <button className='btn btnColor'>Inform</button>
                              </div>
                          </div>
@@ -165,9 +165,8 @@ const Drink = () => {
                                 <span className={like55 && "d-none" || "d-block  text-danger fs-4"}><AiOutlineHeart/></span> 
                                 </button>
                               </div>
-                             <p className='text-center text-danger'>heart</p>
                              <div className='d-flex justify-content-between '>
-                                 <button className='btn btn-success'>Ordering</button>
+                             <button className='btn btn-success p-0'><Modal></Modal></button>
                                  <button className='btn btnColor'>Inform</button>
                              </div>
                          </div>

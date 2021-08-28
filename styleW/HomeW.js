@@ -3,12 +3,12 @@ import styled from "styled-components"
 const HomeW=styled.div`
 
     transition: 0.3s;
-   
-    .section1{
+
+    /* section1   */
+    .section1and11{
         box-sizing: border-box;
         min-height: 90vh;
-        background-image: radial-gradient(circle, #252525, #1d1d1d, #161616, #0d0d0d, #000000);
-        padding: 120px 0;
+        padding: 130px 0;
         .bbqPicture{
             width: 350px;
             height: 350px;
@@ -17,19 +17,14 @@ const HomeW=styled.div`
         }
     }
 
+    .section1{
+        background-image: radial-gradient(circle, #252525, #1d1d1d, #161616, #0d0d0d, #000000);
+    }
+
     .section11{
-        box-sizing: border-box;
-        min-height: 90vh;
         background-image: url("bg2.jpg");
         background-size: cover;
-        padding: 120px 0;
         color: green;
-        .bbqPicture{
-            width: 350px;
-            height: 350px;
-            object-fit: cover;
-            border-radius: 50%;
-        }
         .inhWords{
             color: green;
         }
@@ -37,6 +32,8 @@ const HomeW=styled.div`
             color: green;
         }
     }
+
+
     @media screen and (max-width:560px){
         .bbqPicture{
             width: 250px !important;
@@ -60,7 +57,7 @@ const HomeW=styled.div`
 
     /* section2 */
     .section2{
-        padding: 30px 0;
+        padding: 50px 0;
         color: #F4B400;
         box-sizing: border-box;
         min-height: 90vh;
@@ -92,12 +89,11 @@ const HomeW=styled.div`
             
     }
     .section22{
-        padding: 30px 0;
+        padding: 50px 0;
         color: green;
         box-sizing: border-box;
         min-height: 90vh;
-        background-color: white;
-       
+        background-image: linear-gradient(to left bottom, #34969f, #4fa7ac, #67b9b9, #7ecac7, #95dcd5, #91ded3, #8fe0d0, #8de2cc, #73d4b4, #5cc69a, #47b77f, #36a862);       
         .swiperMeal{
             color: green;
             .swiperIn{
@@ -107,9 +103,10 @@ const HomeW=styled.div`
         .infMeal{
             color: green;
             margin: 50px 15px 15px 15px !important;
-            background-color: rgba(26, 63, 26, 0.173);
+            background-color: #FFFFFF;
             padding: 10px;
             border-radius: 15px;
+            box-shadow: 0 5px 8px 5px #4F5E55;
             
             
         }
@@ -138,12 +135,7 @@ const HomeW=styled.div`
         box-sizing: border-box;
         min-height: 90vh;
         background-image: radial-gradient(circle, #252525, #1d1d1d, #161616, #0d0d0d, #000000);
-        .familyP111{
-            width: 100%;
-            min-height: 93% !important;
-            object-fit: cover;
-            border-radius: 15px;
-        }
+     
         .familyInf{
             min-height: 200px;
             background-color: #363636;
@@ -164,12 +156,6 @@ const HomeW=styled.div`
 
             }
         }
-        .familyPictures{
-            margin:10px;
-            border-radius: 15px;
-            min-height: 100%;
-        
-        }
      
         .familyPictures2{
             margin:10px;
@@ -186,19 +172,19 @@ const HomeW=styled.div`
             
         }
     }
-
+    .familyP111{
+            width: 100%;
+            min-height: 93% !important;
+            object-fit: cover;
+            border-radius: 15px;
+        }
     .section33{
         padding: 40px 0;
         color: green;
         box-sizing: border-box;
         min-height: 90vh;
         background-color: rgba(26, 63, 26, 0.173);
-        .familyP111{
-            width: 100%;
-            min-height: 93% !important;
-            object-fit: cover;
-            border-radius: 15px;
-        }
+     
 
         .familyInf{
             min-height: 200px;
@@ -296,6 +282,7 @@ const HomeW=styled.div`
             box-shadow: 0 3px 4px 1px #f4b30093 ;
         }
     }
+        /* section6 */
     .section6{
         padding: 40px 0;
         color: #F4B400;
@@ -381,7 +368,66 @@ section{
         border-radius: 15px;
         height: 100%;
     }
-      
+    .modalBigacrd1{
+        background-color: #2A2A2A;
+        border-radius: 10px;
+        color: #F4B400;
+        padding-bottom: 10px;
+        padding: 15px;
+        .modalCard{
+        border-bottom: 1px solid #F4B400;
+        }
+    }
+
+    .modalBigacrd2{
+        background-color: #D1D1D1;
+        border-radius: 10px;
+        color: #086000;
+        padding-bottom: 10px;
+        padding: 15px;
+        .modalCard{
+        border-bottom: 1px solid #086000;
+        }
+    }
+.bbqP{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    z-index: 1;
+   
+}
+.bbqp{
+        border-radius: 15px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .bbqP2{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 80px;
+    right: 650px;
+    animation-name: example2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    z-index: 1;
+   
+}
+
+@keyframes example {
+    0%   { transform: rotate(0deg)}
+  50%   { transform: rotate(180deg)}
+  100% { transform: rotate(360deg)}
+}
+@keyframes example2 {
+  0%   { transform: rotate(0deg)}
+  50%   { transform: rotate(180deg)}
+  100% { transform: rotate(360deg)}
+}
   
 `;
 export {HomeW};
