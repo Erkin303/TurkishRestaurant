@@ -138,6 +138,12 @@ const HomeW=styled.div`
         box-sizing: border-box;
         min-height: 90vh;
         background-image: radial-gradient(circle, #252525, #1d1d1d, #161616, #0d0d0d, #000000);
+        .familyP111{
+            width: 100%;
+            min-height: 93% !important;
+            object-fit: cover;
+            border-radius: 15px;
+        }
         .familyInf{
             min-height: 200px;
             background-color: #363636;
@@ -164,12 +170,7 @@ const HomeW=styled.div`
             min-height: 100%;
         
         }
-        .familyP1{
-            width: 100%;
-            height: 94% !important;
-            object-fit: cover;
-            border-radius: 15px;
-        }
+     
         .familyPictures2{
             margin:10px;
             border-radius: 15px;
@@ -191,13 +192,26 @@ const HomeW=styled.div`
         color: green;
         box-sizing: border-box;
         min-height: 90vh;
-        background-image:green;
+        background-color: rgba(26, 63, 26, 0.173);
+        .familyP111{
+            width: 100%;
+            min-height: 93% !important;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
         .familyInf{
             min-height: 200px;
-            background-color: rgba(26, 63, 26, 0.173);
+            background-color: white;
             padding: 10px;
             margin:10px;
             border-radius: 15px;
+            transition: 0.3s;
+            box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.20);
+            &:hover{
+                box-shadow: 0 10px 25px 10px rgba(0, 0, 0, 0.20);
+            
+            }
             .FamilyBig{
                 font-size: 17px;
                 font-weight: 600;
@@ -238,6 +252,7 @@ const HomeW=styled.div`
         padding: 10px;
         margin:10px;
         border-radius: 15px;
+        background-color: white;
         .FamilyBig{
             font-size: 17px;
             font-weight: 600;
@@ -366,6 +381,7 @@ section{
         border-radius: 15px;
         height: 100%;
     }
+      
   
 `;
 export {HomeW};

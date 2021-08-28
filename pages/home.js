@@ -112,7 +112,7 @@ const Home = () => {
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12">
                             <div className='familyPictures'>
-                                <img src="https://www.restobiz.ca/wp-content/uploads/2020/06/Toronto-family-meal-deals.jpg" alt="picture" className='familyP1' />
+                                <img src="https://www.restobiz.ca/wp-content/uploads/2020/06/Toronto-family-meal-deals.jpg" alt="picture" className='familyP111' />
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12">
@@ -133,7 +133,7 @@ const Home = () => {
                                 <div className="row">
                                     <div className="col-lg-6 col-sm-12">
                                     <div className='familyPictures'>
-                                    <img src="https://media.istockphoto.com/photos/dinner-with-friends-group-of-young-people-enjoying-dinner-together-picture-id1173786659?k=6&m=1173786659&s=612x612&w=0&h=jXE8PbjC0Y69V5Zcr2N1o2mzdj_i7E7EIYMEVhlB6cA=" alt="picture" className='familyP1' />
+                                    <img src="https://media.istockphoto.com/photos/dinner-with-friends-group-of-young-people-enjoying-dinner-together-picture-id1173786659?k=6&m=1173786659&s=612x612&w=0&h=jXE8PbjC0Y69V5Zcr2N1o2mzdj_i7E7EIYMEVhlB6cA=" alt="picture" className='familyP111' />
                                     </div>
                                     </div>
                                     <div className="col-lg-6 col-sm-12">
